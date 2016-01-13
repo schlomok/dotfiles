@@ -24,10 +24,16 @@ changes you'll need to note:
 1. It's split into two files.
     * .zshrc is intended to be replacement **after** oh-my-zsh has been installed.
     * .zshrc.custom is sourced by .zshrc
-2. You need to change the variable `$shlomok_userpath` in .zshrc. This can be
-   done with the following command:
+2. You need to change the variable `$shlomok_userpath` in .zshrc with your own
+   username. This can be done with the following command:
     * `sed -i.bak 's/\$schlomok\_userpath/'$(whoami)'/g' .zshrc; rm .zshrc.bak`
 
 ## tmux
 
-todo: include tmux configurations
+## Todo
+
+* tmux
+    - Include tmux configurations
+* General
+    - Create individual installers for each different configuration. 
+    - Create general flags for each configuration (basic, extended).
