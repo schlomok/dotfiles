@@ -14,7 +14,9 @@ repository because it is much larger than a singular file. It is a fork of
 
 ## zsh
 
-todo: include .zshrc
+I use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for my zsh needs.
+The .zshrc file associated assumes that oh-my-zsh is already installed. The
+installer script will install oh-my-zsh for you. 
 
 ## tmux
 
