@@ -11,15 +11,24 @@ fi
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # zsh
+echo "Installing zshrc"
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sed -i.bak 's/\$schlomok\_userpath/'$(whoami)'/g' zsh/.zshrc && 
-rm zsh/.zshrc.bak;
-cp zsh/.zshrc zsh/.zshrc.custom $HOME/
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
+curl https://raw.githubusercontent.com/schlomok/dotfiles/master/zsh/.zshrc -o /tmp/.zshrc;
+curl https://raw.githubusercontent.com/schlomok/dotfiles/master/zsh/.zshrc.custom -o $HOME/.zshrc.custom;
+sed -i.bak 's/\$schlomok\_userpath/'$(whoami)'/g' /tmp/.zshrc;
+cp /tmp/.zshrc $HOME/.zshrc
+
 
 # gem
+echo "Installing gemrc"
 
-cp gem/.gemrc $HOME/.gemrc
+curl https://raw.githubusercontent.com/schlomok/dotfiles/master/gem/.gemrc -o $HOME/.gemrc;
 
 # tmux
 
+
+# Conclusion
+
+source $HOME/.zshrc
+source $HOME/.gemrc
