@@ -19,7 +19,6 @@ curl https://raw.githubusercontent.com/schlomok/dotfiles/master/zsh/.zshrc.custo
 sed -i.bak 's/\$schlomok\_userpath/'$(whoami)'/g' /tmp/.zshrc;
 cp /tmp/.zshrc $HOME/.zshrc
 
-
 # gem
 echo "Installing gemrc"
 
