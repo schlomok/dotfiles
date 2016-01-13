@@ -33,9 +33,12 @@ changes you'll need to note:
 
 ## tmux.conf
 
-My [.tmux.conf](https://gist.github.com/schlomok/500f4010004da7a5ae0c) is actually stored in it's own gist. This is mostly 
-historical, because it's an older fork from a previous gist. If the need arises (or I find it to be generally cleaner), I'll move it over
-into this repository directly (along with my .vimrc). For now, however, I'll keep it as is.
+My .tmux.conf is originally a fork of [napcs/.tmux.clipboard](https://gist.github.com/napcs/1147532). It is pretty straight-forward and I
+haven't changed very much from it. 
+
+**Note**: There is actually a dependency, which is that you have installed [zsh](http://www.zsh.org/) via [Homebrew](http://brew.sh/), 
+and subsequently that you actually want to use that version of zsh as your primary shell. As this is a collection of **my** dotfiles, I 
+kept this in the file. However, feel free to remove it if you desire.
 
 ## Todo
 
