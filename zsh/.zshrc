@@ -44,7 +44,7 @@ plugins=(brew catimg gem git mvn osx rails ruby rvm sudo tmux vi-mode web-search
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,3 +70,5 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 source /Users/$schlomok_userpath/.zshrc.custom
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

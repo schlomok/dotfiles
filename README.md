@@ -18,6 +18,9 @@ I use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for my zsh needs.
 The .zshrc file associated assumes that oh-my-zsh is already installed. The
 installer script will install oh-my-zsh for you. 
 
+The .zshrc also includes an RVM path. This maintains the assumption you are 
+installing RVM, but if not, feel completely free to remove the line.
+
 Also, please note that if you choose to manually copy the .zshrc, there are two
 changes you'll need to note:
 
