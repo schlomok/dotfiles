@@ -27,8 +27,6 @@ curl https://raw.githubusercontent.com/schlomok/dotfiles/master/gem/.gemrc -o $H
 
 # tmux
 
-
 # Conclusion
 
-source $HOME/.zshrc
-source $HOME/.gemrc
+zsh $HOME/.zshrc
