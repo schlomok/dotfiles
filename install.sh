@@ -15,9 +15,9 @@ echo "Installing .zshrc"
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 curl https://raw.githubusercontent.com/schlomok/dotfiles/master/zsh/.zshrc -o /tmp/.zshrc;
-curl https://raw.githubusercontent.com/schlomok/dotfiles/master/zsh/.zshrc.custom -o $HOME/.zshrc.custom;
 sed -i.bak 's/\$schlomok\_userpath/'$(whoami)'/g' /tmp/.zshrc;
 cp /tmp/.zshrc $HOME/.zshrc
+touch $HOME/.zshrc.custom
 
 # gem
 echo "Installing .gemrc"
