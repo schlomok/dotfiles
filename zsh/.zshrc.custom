@@ -1,13 +1,1 @@
-# Exports
 
-export EDITOR=vim
-
-# Bindkeys
-
-bindkey -e
-bindkey '^[[1;9C' forward-word
-bindkey '^[[1;9D' backword-word
-
-# Custom aliases
-
-# Miscellaneous
