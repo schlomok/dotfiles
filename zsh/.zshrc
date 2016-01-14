@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew catimg gem git mvn osx rails ruby rvm sudo tmux vi-mode web-search)
+plugins=(brew catimg gem git mvn osx rails ruby rvm sudo tmux tmuxinator vi-mode web-search)
 
 # User configuration
 
