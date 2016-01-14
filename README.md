@@ -6,6 +6,14 @@ To install, run the following command:
 
     sh -c "$(curl https://raw.githubusercontent.com/schlomok/dotfiles/master/install.sh)"
 
+**Warning**: I highly recommend you backup any of the files that may be changed prior to installing. If you don't like your setup, then 
+you may want to revert. In particular, the generally common files that will be affected by this install include:
+
+* $HOME/.vimrc
+* $HOME/.zshrc
+* $HOME/.gemrc
+* $HOME/.tmux.conf
+
 ## .vimrc
 
 My [.vimrc](https://github.com/schlomok/vimrc) is hosted at a different 
@@ -31,7 +39,12 @@ changes you'll need to note:
   username. This can be done with the following command:
   * `sed -i.bak 's/\$schlomok\_userpath/'$(whoami)'/g' .zshrc; rm .zshrc.bak`
 
-## tmux.conf
+## gem
+
+I include a minor addition to .gemrc which removes the requirement to install ruby-docs. Very rarely do I require to install those, but
+they take up unnecessary time. If you run into problems in the future, you can remove this. It's basically a personal preference file.
+
+## tmux
 
 My .tmux.conf is originally a fork of [napcs/.tmux.clipboard](https://gist.github.com/napcs/1147532). It is pretty straight-forward and I
 haven't changed very much from it. 
