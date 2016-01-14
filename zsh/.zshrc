@@ -69,6 +69,19 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-source /Users/$schlomok_userpath/.zshrc.custom
+# ====================================================================
 
+# Custom added portions
+
+# Exports
+
+export EDITOR=vim
+
+# Bindkeys
+
+bindkey -e
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backword-word
+
+source /Users/$schlomok_userpath/.zshrc.custom # This is where you should include your own custom changes!
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
